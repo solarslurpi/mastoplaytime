@@ -1,8 +1,8 @@
 {
-  "name": "Mastoplaytime",
+  "name": "Mastodon",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/workspaces/mastoplaytime",
+  "workspaceFolder": "/mastodon",
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
@@ -27,7 +27,6 @@
   // This can be used to network with other containers or the host.
   "forwardPorts": [
     3000,
-    3035,
     4000
   ],
   // Use 'postCreateCommand' to run commands after the container is created.
