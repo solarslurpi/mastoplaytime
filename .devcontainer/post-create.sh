@@ -20,8 +20,5 @@ RAILS_ENV=development ./bin/rails assets:precompile
 # Install foreman
 sudo gem install foreman
 
-# Start up the web server in the background.
-foreman start -d web
-# Start up the web pack service in the background.
-foremand start -d webpack
+
 
