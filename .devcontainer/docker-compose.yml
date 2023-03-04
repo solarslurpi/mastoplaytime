@@ -35,6 +35,8 @@ services:
       - external_network
       - internal_network
     user: vscode
+    # Added for Git environment variables.
+    env_file: ../config/.env
 
   db:
     image: postgres:14-alpine
