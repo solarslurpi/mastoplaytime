@@ -23,6 +23,6 @@ sudo gem install foreman
 # Configure git
 # git config --global --edit
 
-git config --global user.email \"${localEnv:GIT_EMAIL}\"
+git config --global user.email $GIT_EMAIL
 
-git config --global user.name "Your Name" \"${localEnv:GIT_USER}\"
+git config --global user.name $GIT_USER
