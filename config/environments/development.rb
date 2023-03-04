@@ -28,7 +28,11 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  ActiveSupport::Logger.new(STDOUT).tap do |logger|
+  log_file = File.open("#{Rails.root}/log/development.log", 'a')
+  ActiveSupport::Logger.new(log_file).tap do |logger|
+  # ActiveSupport::Logger.new(STDOUT).tap do |logger|
+    # Use default logging formatter so that PID and timestamp are not suppressed.
+    config.log_formatter = ::Logger::Formatter.new
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
