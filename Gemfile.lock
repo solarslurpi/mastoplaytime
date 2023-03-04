@@ -104,6 +104,11 @@ GEM
     annotate (3.2.0)
       activerecord (>= 3.2, < 8.0)
       rake (>= 10.4, < 14.0)
+    appmap (0.98.0)
+      activesupport
+      method_source
+      rack
+      reverse_markdown
     ast (2.4.2)
     attr_encrypted (3.1.0)
       encryptor (~> 3.0.0)
@@ -578,6 +583,8 @@ GEM
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
+    reverse_markdown (2.1.1)
+      nokogiri
     rexml (3.2.5)
     rotp (6.2.0)
     rpam2 (4.0.2)
@@ -776,6 +783,7 @@ DEPENDENCIES
   active_record_query_trace (~> 1.8)
   addressable (~> 2.8)
   annotate (~> 3.2)
+  appmap
   aws-sdk-s3 (~> 1.119)
   better_errors (~> 2.9)
   binding_of_caller (~> 1.0)
@@ -900,3 +908,9 @@ DEPENDENCIES
   webpacker (~> 5.4)
   webpush!
   xorcist (~> 1.1)
+
+RUBY VERSION
+   ruby 3.2.1p31
+
+BUNDLED WITH
+   2.4.6

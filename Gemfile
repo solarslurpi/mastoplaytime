@@ -3,6 +3,8 @@
 source 'https://rubygems.org'
 ruby '>= 2.7.0', '< 3.3.0'
 
+gem 'appmap', :groups => [:development, :test]
+
 gem 'pkg-config', '~> 1.5'
 gem 'rexml', '~> 3.2'
 

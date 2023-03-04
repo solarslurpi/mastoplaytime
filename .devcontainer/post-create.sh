@@ -20,5 +20,11 @@ RAILS_ENV=development ./bin/rails assets:precompile
 # Install foreman
 sudo gem install foreman
 
+# Configure git
+git config --global --edit
+
+# git config --global user.email \"${localEnv:VSCODE_CONTAINER_GIT_EMAIL}\"
+
+# git config --global user.name "Your Name" \"${localEnv:VSCODE_CONTAINER_GIT_USER}\"
 
 
