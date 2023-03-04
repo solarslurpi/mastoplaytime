@@ -32,6 +32,7 @@ Rails.application.configure do
   ActiveSupport::Logger.new(log_file).tap do |logger|
   # ActiveSupport::Logger.new(STDOUT).tap do |logger|
     # Use default logging formatter so that PID and timestamp are not suppressed.
+    config.log_level = :info
     config.log_formatter = ::Logger::Formatter.new
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
