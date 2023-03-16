@@ -14,8 +14,7 @@
         "EditorConfig.EditorConfig",
         "dbaeumer.vscode-eslint",
         "rebornix.Ruby",
-        "webben.browserslist",
-        "appland.appmap"
+        "webben.browserslist"
       ]
     }
   },
